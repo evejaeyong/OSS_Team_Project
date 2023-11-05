@@ -16,6 +16,8 @@ Jaeyong's Love Finder
 
 1. 상대방이 수락했을 때 매칭이 되며, 상대방의 SNS 정보를 알 수 있다.
 
+![Image](/images/KakaoTalk_20231105_163924427.jpg)
+
 ## Project Schedule
 - 1주차 (11/06 ~ 11/12)
   구현할 기능 확정, 디자인 콘티 작성
