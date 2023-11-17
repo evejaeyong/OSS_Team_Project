@@ -19,6 +19,11 @@
     .rebecca-font {
       font-family: 'EF_Rebecca';
     }
+
+    .center-alignment {
+      text-align: center;
+      margin: 0 auto;
+    }
   </style>
   <title>Jaeyong's Love Finder</title>
 
@@ -41,17 +46,19 @@
           <a class="nav-link" href="mypage.html">My Page</a>
         </div>
   </nav>
-
-  <div class="login-container">
-    <h1 class="rebecca-font"><strong>LOGIN</strong></h1>
-    <div class="loginbox">
-      <p>ID</p>
-      <input type="text" id="ID"><br>
-      <p>PassWord</p>
-      <input type="text" id="PW"><br><br>
-      <button id="btn-login" onclick="login()">Login</button>
+  <div class="d-flex">
+    <div class="login-container align-items-center mb-2 mt-2 bg-light p-2 w-25 center-alignment">
+      <h1 class="rebecca-font"><strong>LOGIN</strong></h1>
+      <div class="loginbox">
+        <p>ID</p>
+        <input type="text" id="ID"><br>
+        <p>PassWord</p>
+        <input type="text" id="PW"><br><br>
+        <button id="btn-login" onclick="login()">Login</button>
+      </div>
     </div>
   </div>
+  
 
 
   <div class="container">
