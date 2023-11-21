@@ -53,23 +53,25 @@
           <a class="nav-link" href="mypage.html">My Page</a>
         </div>
   </nav>
-  <div class="background d-flex" id="background"></div>
   <div class="d-flex align-items-center">
-    <div class="p-2 center-alignment">
-      <h2>안녕 나는 재용</h2>
-      <h2>나와 사귈 의향이 있다면 연락 줘</h2>
-      <h2>@evejaeyong_</h2>
-    </div>
     <div class="login-container align-items-center mb-2 mt-2 bg-light p-2 w-25 center-alignment">
-      <h1 class="rebecca-font"><strong>LOGIN</strong></h1>
-      <div class="loginbox">
+      <h1 class="rebecca-font"><strong>SIGN UP</strong></h1>
+      <div class="signupbox">
         <p>ID</p>
         <input type="text" id="ID"><br>
         <p>PassWord</p>
         <input type="text" id="PW"><br><br>
-        
-        <button id="btn-login" onclick="login()">Login</button><br>
-        <a href="signup.html" class="nav-link p-0 text-body-secondary">Sign Up</a>
+        <p>Gender</p>
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <input type="radio" class="btn-check btn-danger" name="btnradio" id="High" value="High" autocomplete="off" checked>
+            <label class="btn btn-outline-primary" for="High">Man</label>
+          
+            <input type="radio" class="btn-check btn-success" name="btnradio" id="Low" value="Low" autocomplete="off">
+            <label class="btn btn-outline-primary" for="Low">Woman</label>
+        </div>
+        <br><p>e-mail</p>
+        <input type="text" id="e-mail"><br><br>
+        <button id="btn-login" onclick="sign_up()">Sign Up</button>
       </div>
     </div>
   </div>
