@@ -17,7 +17,7 @@
 ||발표 준비|
 
 ##Project ScreenShot
-![Images](/images/KakaoTalk_20231122_014547925.png)
+![Image](/images/KakaoTalk_20231122_014547925.png)
 
 ##Individual Progress Status
 1. 김태관
