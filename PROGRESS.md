@@ -1,6 +1,6 @@
-#Project Progress Report
+# Project Progress Report
 
-##Project Summery
+## Project Summery
 2023/11/23 기준 프로젝트에 필요한 모든 페이지를 생성, 서로 링크를 연결해줌.
 첫 페이지가 되는 인덱스 페이지(로그인), 메인 페이지 제작
 
@@ -9,17 +9,17 @@
 2. 개인정보 저장 서버 제작
 3. 발표 준비
 
-##Project Schedule
+## Project Schedule
 |11/24~11/30|12/01~12/07|
 |-----------|-----------|
 |서브 페이지 제작|프로그램 웹 디자인|
 |서버 제작|보고서 작성|
 ||발표 준비|
 
-##Project ScreenShot
+## Project ScreenShot
 ![Image](/images/KakaoTalk_20231122_014547925.png)
 
-##Individual Progress Status
+## Individual Progress Status
 1. 김태관
 제작 총괄
 웹페이지 폰트 설정
