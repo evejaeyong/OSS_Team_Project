@@ -1,18 +1,62 @@
 let userDataList = [];
-let loginState = 0;
+let loginState = {
+    ID: "",
+    PW: "",
+    gender: "",
+    email: ""
+};
 
 window.addEventListener("load", () => {
-    userDataList = (JSON.parse(JSON.stringify(UserData))).data;
+
+    if (localStorage.getItem("data") === "null") {
+        userDataList = [];
+    }
+    else {
+        userDataList = JSON.parse(localStorage.getItem("data"));
+    }
+    if (localStorage.getItem("state") === "null") {
+        loginState = {};
+    }
+    else {
+        loginState = JSON.parse(localStorage.getItem("state"));
+    }
+
 })
+
+window.addEventListener('unload', () => {
+    updateLocalStorage();
+})
+
+function updateLocalStorage() {
+
+    localStorage.setItem("data", JSON.stringify(userDataList));
+    localStorage.setItem("state", JSON.stringify(loginState));
+
+}
 
 function login() {
     let inputID = document.querySelector("#IDinput");
     let inputPW = document.querySelector("#PWinput");
 
-    if (inputID.value == "" || inputPW.value == "") {
+    if (inputID.value === "") {
+        let idAlert = document.querySelector("#ID-alert");
+        idAlert.innerHTML = "아이디를 입력해주세요."
         return;
     }
+    else {
+        let idAlert = document.querySelector("#ID-alert");
+        idAlert.innerHTML = ""
+    }
 
+    if (inputPW.value === "") {
+        let pwAlert = document.querySelector("#PW-alert");
+        pwAlert.innerHTML = "비밀번호를 입력해주세요."
+        return;
+    }
+    else {
+        let pwAlert = document.querySelector("#PW-alert");
+        pwAlert.innerHTML = ""
+    }
     let targetData;
 
     userDataList.forEach((data) => {
@@ -23,7 +67,7 @@ function login() {
 
     if (targetData) {
         if (targetData.PW === inputPW.value) {
-            loginState = 1;
+            loginState = targetData;
             location.reload();
         }
     }
@@ -34,7 +78,6 @@ function sign_up() {
     let inputPW = document.querySelector("#PWinput");
     let inputRadio = document.getElementsByName("genderradio");
     let inputEmail = document.querySelector("#e-mailinput");
-    let userDataList = (JSON.parse(JSON.stringify(UserData))).data;
 
     let find = 0;
 
