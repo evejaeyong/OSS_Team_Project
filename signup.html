@@ -25,11 +25,11 @@
       margin: 0 auto;
     }
 
-    .background{
+    .background {
       height: 1200px;
       background-repeat: no-repeat;
       background-image: url(main44.jpg);
-      background-size : contain;
+      background-size: contain;
     }
   </style>
   <title>Jaeyong's Love Finder</title>
@@ -58,24 +58,27 @@
       <h1 class="rebecca-font"><strong>SIGN UP</strong></h1>
       <div class="signupbox">
         <p>ID</p>
-        <input type="text" id="ID"><br>
+        <input type="text" id="IDinput"><br>
         <p>PassWord</p>
-        <input type="text" id="PW"><br><br>
+        <input type="text" id="PWinput"><br><br>
         <p>Gender</p>
         <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-            <input type="radio" class="btn-check btn-danger" name="btnradio" id="High" value="High" autocomplete="off" checked>
-            <label class="btn btn-outline-primary" for="High">Man</label>
-          
-            <input type="radio" class="btn-check btn-success" name="btnradio" id="Low" value="Low" autocomplete="off">
-            <label class="btn btn-outline-primary" for="Low">Woman</label>
+          <input type="radio" class="btn-check btn-danger" name="genderradio" id="radioMan" value="Man"
+            autocomplete="off" checked>
+          <label class="btn btn-outline-primary" for="radioMan">Man</label>
+
+          <input type="radio" class="btn-check btn-success" name="genderradio" id="radioWoman" value="Woman"
+            autocomplete="off">
+          <label class="btn btn-outline-primary" for="radioWoman">Woman</label>
         </div>
-        <br><p>e-mail</p>
-        <input type="text" id="e-mail"><br><br>
+        <br>
+        <p>e-mail</p>
+        <input type="text" id="e-mailinput"><br><br>
         <button id="btn-login" onclick="sign_up()">Sign Up</button>
       </div>
     </div>
   </div>
-  
+
 
 
   <div class="container">
@@ -135,6 +138,9 @@
       </div>
     </footer>
   </div>
+
+  <script src="script.js">
+  </script>
 
 </body>
 
