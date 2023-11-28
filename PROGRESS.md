@@ -20,9 +20,9 @@
 ||프로젝트 발표 준비|
 
 ## Project ScreenShot
-![Image](/images/project_index.png)
-![Image](/images/project_male.png)
-![Image](/images/project_sign_up.png)
+![Image](/images/project_progress_index.png)
+![Image](/images/project_progress_male.png)
+![Image](/images/project_progress_sign_up.png)
 
 ## Individual Progress Status
 ### 김태관
