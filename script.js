@@ -1,4 +1,4 @@
-let userDataList = [];
+
 let loginState = {
     ID: "",
     PW: "",
@@ -8,12 +8,6 @@ let loginState = {
 
 window.addEventListener("load", () => {
 
-    if (localStorage.getItem("data") === "null") {
-        userDataList = [];
-    }
-    else {
-        userDataList = JSON.parse(localStorage.getItem("data"));
-    }
     if (localStorage.getItem("state") === "null") {
         loginState = {};
     }
@@ -29,12 +23,11 @@ window.addEventListener('unload', () => {
 
 function updateLocalStorage() {
 
-    localStorage.setItem("data", JSON.stringify(userDataList));
     localStorage.setItem("state", JSON.stringify(loginState));
 
 }
 
-function login() {
+async function login() {
     let inputID = document.querySelector("#IDinput");
     let inputPW = document.querySelector("#PWinput");
 
@@ -57,6 +50,12 @@ function login() {
         let pwAlert = document.querySelector("#PW-alert");
         pwAlert.innerHTML = ""
     }
+
+    const data = await fetch('Data.json');
+    const obj = await data.json();
+
+    const userDataList = obj.userData;
+
     let targetData;
 
     userDataList.forEach((data) => {
@@ -73,13 +72,18 @@ function login() {
     }
 }
 
-function sign_up() {
+async function sign_up() {
     let inputID = document.querySelector("#IDinput");
     let inputPW = document.querySelector("#PWinput");
     let inputRadio = document.getElementsByName("genderradio");
     let inputEmail = document.querySelector("#e-mailinput");
 
     let find = 0;
+
+    const data = await fetch('Data.json');
+    const obj = await data.json();
+
+    const userDataList = obj.userData;
 
     userDataList.forEach((data) => {
         if (data.ID === inputID.value) {
