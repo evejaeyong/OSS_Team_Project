@@ -21,16 +21,16 @@
     ],
     "postData": [
         {
-            "name": "KimTaegwan",
+            "name": "김태관",
             "age": 21,
             "mbti": "ISTP",
-            "home": "서울특별시 노원구 광운로 21"
+            "home": "ulsan"
         },
         {
-            "name": "KimJaeyong",
+            "name": "김재용",
             "age": 71,
-            "mbti": "XXXX",
-            "home": "서울특별시 노원구 광운로 215"
+            "mbti": "ISTJ",
+            "home": "chungbuk"
         }
     ]
 }
