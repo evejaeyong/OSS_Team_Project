@@ -1,4 +1,3 @@
-
 let loginState = {
     ID: "",
     PW: "",
@@ -76,7 +75,7 @@ async function login() {
 
 }
 
-async function sign_up() {
+function sign_up() {
     let inputID = document.querySelector("#IDinput");
     let inputPW = document.querySelector("#PWinput");
     let inputRadio = document.getElementsByName("genderradio");
@@ -95,52 +94,37 @@ async function sign_up() {
         }
     });
 
-    /*
-    const data = await fetch('Data.json');
-    const obj = await data.json();
+    fetch("/userData", { method: "GET" })
+        .then((res) => res.json())
+        .then((userDataList) => {
+            let find = 0;
 
-    const userDataList = obj.userData;
+            userDataList.forEach((data) => {
+                if (data.ID === userData.ID) {
+                    find = 1;
+                }
+            })
 
-    userDataList.forEach((data) => {
-        if (data.ID === inputID.value) {
-            find = 1;
-        }
-    })
+            if (find === 1) {
+                //이미 있다!!
+                const signAlert = document.querySelector("#signupAlert");
 
-    if (find === 1) {
-        //이미 있으면 에러
-        return;
-    }
+                signAlert.innerHTML = "이미 존재하는 아이디입니다.";
+                return;
+            }
+            else {
 
-    let userData = {
-        ID: inputID.value,
-        PW: inputPW.value,
-        gender: "",
-        email: inputEmail.value
-    }
+                const signAlert = document.querySelector("#signupAlert");
 
-    inputRadio.forEach((node) => {
-        if (node.checked) {
-            userData.gender = node.value;
-        }
-    });
-
-    */
-
-    fetch("/signup", {
-        method: "POST",
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ userData })
-    })
-    // .then((response) => {
-    //     if (response == "exist") {
-    //         console.log(response);
-    //     }
-    //     else
-    //         location.href = "index.html";
-    // });
-
+                signAlert.innerHTML = " ";
+                fetch("/signup", {
+                    method: "POST",
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ userData })
+                })
+            }
+        })
 }
 

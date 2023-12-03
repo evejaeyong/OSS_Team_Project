@@ -13,23 +13,9 @@ app.get("/userData", (req, res) => {
 })
 
 app.post("/signup", (req, res) => {
-    let find = 0;
-
-    userDataList.forEach((data) => {
-        if (data.ID === req.body.ID) {
-            find = 1;
-        }
-    })
-
-    if (find === 1) {
-        res.send("exist");
-        return;
-    }
-
-    userDataList.push(userData);
+    userDataList.push(req.body.userData);
     console.log(userDataList);
-
-    res.redirect(200, "./main.html");
+    //res.redirect(200, "./main.html");
 });
 
 
