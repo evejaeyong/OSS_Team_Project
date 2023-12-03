@@ -67,7 +67,7 @@ async function login() {
             if (targetData) {
                 if (targetData.PW === inputPW.value) {
                     loginState = targetData;
-                    location.reload();
+                    location.href = 'main.html'
                 }
             }
         })
