@@ -20,16 +20,31 @@
       font-family: 'EF_Rebecca';
     }
 
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
     .center-alignment {
       text-align: center;
       margin: 0 auto;
     }
 
     .background {
-      height: 1200px;
+      width: 100%;
+      height: 100%;
       background-repeat: no-repeat;
-      background-image: url(main44.jpg);
+      background-image: url(mainpage_image.png);
       background-size: contain;
+    }
+
+    h3 {
+      text-align: left;
+    }
+
+    .login-container {
+      background-color: rgb(211, 211, 211, 0.3);
     }
   </style>
   <title>Jaeyong's Love Finder</title>
@@ -46,39 +61,31 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link" href="main.html">Home</a>
-          <a class="nav-link" href="male.html">Male</a>
-          <a class="nav-link" href="female.html">Female</a>
-          <a class="nav-link" href="mypage.html">My Page</a>
-        </div>
+
   </nav>
-  <div class="d-flex align-items-center">
-    <div class="login-container align-items-center mb-2 mt-2 bg-light p-2 w-25 center-alignment">
-      <h1 class="rebecca-font"><strong>SIGN UP</strong></h1>
-      <div class="signupbox">
+
+  <!-- <div class="background d-flex" id="background"></div> -->
+  <div class="background d-flex align-items-center">
+    <div class="p-2 center-alignment">
+      <h3 class="rebecca-font">For us,</h3>
+      <h3 class="rebecca-font">who have awaited love,</h3>
+      <h3 class="rebecca-font">the dazzling winter of 2023 will forever be remembered</h3>
+    </div>
+    <div class="login-container align-items-center mb-2 mt-2 p-2 w-25 center-alignment">
+      <h1 class="rebecca-font"><strong>LOGIN</strong></h1>
+      <div class="loginbox">
         <p>ID</p>
         <input type="text" id="IDinput"><br>
+        <p id="ID-alert"></p>
         <p>PassWord</p>
         <input type="text" id="PWinput"><br><br>
-        <p>Gender</p>
-        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-          <input type="radio" class="btn-check btn-danger" name="genderradio" id="radioMan" value="Man"
-            autocomplete="off" checked>
-          <label class="btn btn-outline-primary" for="radioMan">Man</label>
+        <p id="PW-alert"></p>
 
-          <input type="radio" class="btn-check btn-success" name="genderradio" id="radioWoman" value="Woman"
-            autocomplete="off">
-          <label class="btn btn-outline-primary" for="radioWoman">Woman</label>
-        </div>
-        <br>
-        <p>e-mail</p>
-        <input type="text" id="e-mailinput"><br><br>
-        <button id="btn-login" onclick="sign_up()">Sign Up</button>
+        <button id="btn-login" onclick="login()">Login</button><br>
+        <a href="signup.html" class="nav-link p-0 text-body-secondary">Sign Up</a>
       </div>
     </div>
   </div>
-
 
 
   <div class="container">
@@ -99,10 +106,10 @@
       <div class="col mb-3">
         <h5>Page</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="main.html" class="nav-link p-0 text-body-secondary">Home</a></li>
-          <li class="nav-item mb-2"><a href="male.html" class="nav-link p-0 text-body-secondary">Male</a></li>
-          <li class="nav-item mb-2"><a href="female.html" class="nav-link p-0 text-body-secondary">Female</a></li>
-          <li class="nav-item mb-2"><a href="mypage.html" class="nav-link p-0 text-body-secondary">My Page</a></li>
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Male</a></li>
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Female</a></li>
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">My Page</a></li>
         </ul>
       </div>
 

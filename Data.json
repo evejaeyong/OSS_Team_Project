@@ -1,0 +1,36 @@
+{
+    "userData": [
+        {
+            "ID": "user1",
+            "PW": "qwe123",
+            "gender": "Man",
+            "email": "user1@gmail.com"
+        },
+        {
+            "ID": "user2",
+            "PW": "qwer1234",
+            "gender": "Woman",
+            "email": "user2@gmail.com"
+        },
+        {
+            "ID": "user3",
+            "PW": "qwe123@",
+            "gender": "Man",
+            "email": "user3@gmail.com"
+        }
+    ],
+    "postData": [
+        {
+            "name": "KimTaegwan",
+            "age": 21,
+            "mbti": "ISTP",
+            "home": "서울특별시 노원구 광운로 21"
+        },
+        {
+            "name": "KimJaeyong",
+            "age": 71,
+            "mbti": "XXXX",
+            "home": "서울특별시 노원구 광운로 215"
+        }
+    ]
+}
