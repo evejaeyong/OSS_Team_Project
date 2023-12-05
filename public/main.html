@@ -20,70 +20,75 @@
       font-family: 'EF_Rebecca';
     }
 
+    body,
+    html {
+      height: 100%;
+      width: 100%;
+    }
+
+    .background {
+      height: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-image: url(mainpage_image.png);
+      background-size: cover;
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+    h5 {
+      text-align: center;
+    }
+
     .center-alignment {
       text-align: center;
       margin: 0 auto;
     }
-
-    .background {
-      height: 800px;
-      background-repeat: no-repeat;
-      background-image: url(mainpage_image.png);
-      background-size: contain;
-    }
-
-    h3{
-      text-align: left;
-    }
-
-    .login-container {
-      background-color: rgb(211, 211, 211, 0.3);
-    }
   </style>
+  <title>Jaeyong's Love Finder</title>
 
   <style type="text/css">
-  .navbar{
-   background-color:#fc5d9a !important;
-  }
+    .navbar{
+     background-color:#fc5d9a !important;
+    }
   </style>
-
-  <title>Jaeyong's Love Finder</title>
 
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand rebecca-font" href="index.html"><i class="bi bi-arrow-through-heart-fill"></i> Love
+      <a class="navbar-brand rebecca-font" href="main.html"><i class="bi bi-arrow-through-heart-fill"></i> Love
         Finder</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="main.html">Home</a>
+          <a class="nav-link" href="male.html">Male</a>
+          <a class="nav-link" href="female.html">Female</a>
+          <a class="nav-link" href="mypage.html">My Page</a>
+        </div>
   </nav>
-      
-  <!-- <div class="background d-flex" id="background"></div> -->
+  <!-- main body -->
+  <!-- <div class="background d-flex" id="background">
+        
+      </div> -->
   <div class="background d-flex align-items-center">
     <div class="p-2 center-alignment">
-      <h3 class="rebecca-font">For us,</h3>
-      <h3 class="rebecca-font">who have awaited love,</h3>
-      <h3 class="rebecca-font">the dazzling winter of 2023 will forever be remembered</h3>
-    </div>
-    <div class="login-container align-items-center mb-2 mt-2 p-2 w-25 center-alignment">
-      <h1 class="rebecca-font"><strong>LOGIN</strong></h1>
-      <div class="loginbox">
-        <p>ID</p>
-        <input type="text" id="IDinput"><br>
-        <p id="ID-alert"></p>
-        <p>PassWord</p>
-        <input type="text" id="PWinput"><br><br>
-        <p id="PW-alert"></p>
-
-        <button id="btn-login" onclick="login()">Login</button><br>
-        <a href="signup.html" class="nav-link p-0 text-body-secondary">Sign Up</a>
-      </div>
+      <h3 class="rebecca-font">People who are hungry for love</h3>
+      <h5 class="rebecca-font">-Taegwan</h5>
+      <br>
+      <h3 class="rebecca-font">For my lonely friends</h3>
+      <h5 class="rebecca-font">-Seoeun</h5>
+      <br>
+      <h3 class="rebecca-font">For my friend who feels happy from my misfortune,</h3>
+      <h3 class="rebecca-font">I made a blind date site with a name that makes me look lonely, not very lonely.</h3>
+      <h5 class="rebecca-font">-Jaeyong</h5>
     </div>
   </div>
 
@@ -106,10 +111,10 @@
       <div class="col mb-3">
         <h5>Page</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
-          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Male</a></li>
-          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Female</a></li>
-          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">My Page</a></li>
+          <li class="nav-item mb-2"><a href="main.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="male.html" class="nav-link p-0 text-body-secondary">Male</a></li>
+          <li class="nav-item mb-2"><a href="female.html" class="nav-link p-0 text-body-secondary">Female</a></li>
+          <li class="nav-item mb-2"><a href="mypage.html" class="nav-link p-0 text-body-secondary">My Page</a></li>
         </ul>
       </div>
 
@@ -145,10 +150,6 @@
       </div>
     </footer>
   </div>
-
-  <script src="script.js">
-  </script>
-
 </body>
 
 </html>

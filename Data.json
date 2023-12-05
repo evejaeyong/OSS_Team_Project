@@ -1,0 +1,36 @@
+{
+    "userData": [
+        {
+            "ID": "user1",
+            "PW": "qwe123",
+            "gender": "Man",
+            "email": "user1@gmail.com"
+        },
+        {
+            "ID": "user2",
+            "PW": "qwer1234",
+            "gender": "Woman",
+            "email": "user2@gmail.com"
+        },
+        {
+            "ID": "user3",
+            "PW": "qwe123@",
+            "gender": "Man",
+            "email": "user3@gmail.com"
+        }
+    ],
+    "postData": [
+        {
+            "name": "김태관",
+            "age": 21,
+            "mbti": "ISTP",
+            "home": "ulsan"
+        },
+        {
+            "name": "김재용",
+            "age": 71,
+            "mbti": "ISTJ",
+            "home": "chungbuk"
+        }
+    ]
+}
