@@ -61,7 +61,7 @@ function insertFollwoing(post) {
             <p class="flex-grow-1" style="width:50%;">MBTI : ${post.mbti}</p>
             <p class="flex-grow-1" style="width:50%;">거주지 : ${post.home}</p>
         </div>
-        <p>한 줄 평 : ${post.intro}</p>`;
+        <p>한 줄 소개 : ${post.intro}</p>`;
 
 
 
