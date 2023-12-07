@@ -43,6 +43,10 @@ window.addEventListener("load", () => {
     }
     else {
         loginState = JSON.parse(localStorage.getItem("state"));
+
+        if (loginState.gender == "Woman") {
+            postbtn.disabled = true;
+        }
     }
 
     loadPost();
