@@ -31,26 +31,24 @@ async function login() {
     let inputPW = document.querySelector("#PWinput");
 
     if (inputID.value === "") {
-        let idAlert = document.querySelector("#ID-alert");
+        let idAlert = document.querySelector("#loginAlert");
         idAlert.innerHTML = "아이디를 입력해주세요."
         return;
     }
     else {
-        let idAlert = document.querySelector("#ID-alert");
+        let idAlert = document.querySelector("#loginAlert");
         idAlert.innerHTML = " "
     }
 
     if (inputPW.value === "") {
-        let pwAlert = document.querySelector("#PW-alert");
+        let pwAlert = document.querySelector("#loginAlert");
         pwAlert.innerHTML = "비밀번호를 입력해주세요."
         return;
     }
     else {
-        let pwAlert = document.querySelector("#PW-alert");
+        let pwAlert = document.querySelector("#loginAlert");
         pwAlert.innerHTML = " "
     }
-
-    let userDataList;
 
     fetch("/userData", { method: "GET" })
         .then((res) => res.json())
@@ -85,7 +83,8 @@ function sign_up() {
         ID: inputID.value,
         PW: inputPW.value,
         gender: "",
-        email: inputEmail.value
+        email: inputEmail.value,
+        following: []
     };
 
     inputRadio.forEach((node) => {
@@ -124,7 +123,19 @@ function sign_up() {
                     },
                     body: JSON.stringify({ userData })
                 })
+                location.href = "index.html";
             }
         })
 }
 
+
+function logout() {
+    loginState = {
+        ID: "",
+        PW: "",
+        gender: "",
+        email: ""
+    };
+
+    location.href = "index.html";
+}

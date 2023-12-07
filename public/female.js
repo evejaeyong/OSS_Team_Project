@@ -130,3 +130,14 @@ window.addEventListener('unload', () => {
 function updateLocalStorage() {
     localStorage.setItem("state", JSON.stringify(loginState));
 }
+
+function logout() {
+    loginState = {
+        ID: "",
+        PW: "",
+        gender: "",
+        email: ""
+    };
+
+    location.href = "index.html";
+}

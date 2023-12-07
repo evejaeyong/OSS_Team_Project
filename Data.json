@@ -11,13 +11,15 @@
             "ID": "user2",
             "PW": "qwer1234",
             "gender": "Woman",
-            "email": "user2@gmail.com"
+            "email": "user2@gmail.com",
+            "following": []
         },
         {
             "ID": "user3",
             "PW": "qwe123@",
             "gender": "Man",
-            "email": "user3@gmail.com"
+            "email": "user3@gmail.com",
+            "following": []
         }
     ],
     "postData": [

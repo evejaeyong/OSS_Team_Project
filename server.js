@@ -29,7 +29,6 @@ app.post("/myFollowing", (req, res) => {
 
 app.post("/signup", (req, res) => {
     userDataList.push(req.body.userData);
-    console.log(userDataList);
     //res.redirect(200, "./main.html");
 });
 

@@ -89,6 +89,10 @@
       background-color: rgb(216, 141, 2) !important;
     }
 
+    #btn-post:disabled {
+      border: 0px !important;
+    }
+
     div.UserList {
       margin-left: 15px;
       padding-right: 15px;
@@ -128,8 +132,8 @@
     }
   </style>
   <style type="text/css">
-    .navbar{
-     background-color:#ffffff !important;
+    .navbar {
+      background-color: #ffffff !important;
     }
   </style>
   <title>Jaeyong's Love Finder</title>
@@ -140,7 +144,8 @@
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand rebecca-font" href="main.html"><i class="bi bi-arrow-through-heart-fill"></i> Love Finder</a>
+      <a class="navbar-brand rebecca-font" href="main.html"><i class="bi bi-arrow-through-heart-fill"></i> Love
+        Finder</a>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link" href="main.html">Home</a>
@@ -148,144 +153,154 @@
           <a class="nav-link active" aria-current="page" href="female.html">Female</a>
           <a class="nav-link" href="mypage.html">My Page</a>
         </div>
-      </nav>
-      
-      <div class="main-container" style="background-color: #eb8787;">
-        <!-- <div class="picture-container">
+      </div>
+      <button class="btn btn-logout" onclick="logout()">LogOut</button>
+  </nav>
+
+  <div class="main-container" style="background-color: #eb8787;">
+    <!-- <div class="picture-container">
           <img src="main44.jpg" id="main-img">
         </div> -->
-    
-    
-        <div class="content-container">
-          <div>
-            <div class="d-flex ps-2 UserList">
-              <p class="flex-grow-1 rebecca-font" style="margin-top:auto; margin-bottom: auto;">User List</p>
-              <button type="button" class="btn" id="btn-post"><strong style="color: #ffffff;">POST</strong></button>
-            </div>
-            <!-- <div class="post-container">
+
+
+    <div class="content-container">
+      <div>
+        <div class="d-flex ps-2 UserList">
+          <p class="flex-grow-1 rebecca-font" style="margin-top:auto; margin-bottom: auto;">User List</p>
+          <button type="button" class="btn" id="btn-post"><strong style="color: #ffffff;">POST</strong></button>
+        </div>
+        <!-- <div class="post-container">
               <p class=""></p>
               <input type="text" class="form-control" id="postNameInput" placeholder="이름">
               <input type="number" class="form-control" id="postAgeInput" placeholder="나이">
     
             </div> -->
-          </div>
- 
- 
-        </div>
-    
-    
-        <div id="modal" class="hidden">
-          <div id="modal-container">
-            <h3>POST</h3>
-            <div class="d-flex mt-2">
-              <input type="text" class="form-control me-1" id="postNameInput" placeholder="이름">
-              <input type="text" class="form-control ms-1" id="postAgeInput" placeholder="나이">
-    
-            </div>
-            <div class="d-flex mt-2">
-              <select class="form-select me-1" id="MBTI">
-                <option selected>MBTI</option>
-                <option value="ISTJ">ISTJ</option>
-                <option value="ISFJ">ISFJ</option>
-                <option value="INFJ">INFJ</option>
-                <option value="INTJ">INTJ</option>
-                <option value="ISTP">ISTP</option>
-                <option value="ISFP">ISFP</option>
-                <option value="INFP">INFP</option>
-                <option value="INTP">INTP</option>
-                <option value="ESTP">ESTP</option>
-                <option value="ESFP">ESFP</option>
-                <option value="ENFP">ENFP</option>
-                <option value="ENTP">ENTP</option>
-                <option value="ESTJ">ESTJ</option>
-                <option value="ESFJ">ESFJ</option>
-                <option value="ENFJ">ENFJ</option>
-                <option value="ENTJ">ENTJ</option>
-              </select>
-              <select class="form-select ms-1" id="location">
-                <option selected>사는 곳</option>
-                <option value="서울">서울</option>
-                <option value="인천">인천</option>
-                <option value="경기">경기</option>
-                <option value="부산">부산</option>
-                <option value="광주">광주</option>
-                <option value="대구">대구</option>
-                <option value="대전">대전</option>
-                <option value="울산">울산</option>
-                <option value="충북">충북</option>
-                <option value="충남">충남</option>
-                <option value="전북">전북</option>
-                <option value="전남">전남</option>
-                <option value="경북">경북</option>
-                <option value="경남">경남</option>
-                <option value="제주">제주</option>
-              </select>
-            </div>
-            
-            <input type="text" class="form-control mt-2" id="postemail" placeholder="이메일"></input>
-            <input type="text" class="form-control mt-2" id="postIntroduceInput" placeholder="한 줄 소개">
-            
-            <div class="d-flex mt-2">
-              <p class="flex-grow-1"></p>
-              <button class="btn btn-success mt-2 me-2" id="modalPostButton">Post</button>
-              <button class="btn btn-danger mt-2" id="modalCloseButton">Cancel</button>
-            </div>
-          </div>
-        </div>
-    
-    
       </div>
 
-      
-      <div class="container">
-        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-          <div class="col mb-3">
-            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-            </a>
-            <p class="text-body-secondary">© 2023 Jaeyong's Love Finder</p>
-          </div>
-      
-          <div class="col mb-3">
-      
-          </div>
-      
-          <div class="col mb-3">
-            <h5>Page</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="main.html" class="nav-link p-0 text-body-secondary">Home</a></li>
-              <li class="nav-item mb-2"><a href="male.html" class="nav-link p-0 text-body-secondary">Male</a></li>
-              <li class="nav-item mb-2"><a href="female.html" class="nav-link p-0 text-body-secondary">Female</a></li>
-              <li class="nav-item mb-2"><a href="mypage.html" class="nav-link p-0 text-body-secondary">My Page</a></li>
-            </ul>
-          </div>
-      
-          <div class="col mb-3">
-            <h5>Developer</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary">Taegwan Kim</a>
-                <div class="d-flex align-items-center mb-2 mt-2">
-                  <a class="nav-link p-0 text-body-secondary me-1" href="https://github.com/KimTaegwan03"><i class="bi bi-github"></i></a>
-                <a class="nav-link p-0 text-body-secondary" href="https://www.instagram.com/tae9wan/"><i class="bi bi-instagram"></i></a>
-                </div>
-              </li>
-                
-              <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary">Jaeyong Kim</a>
-                <div class="d-flex align-items-center mb-2 mt-2">
-                  <a class="nav-link p-0 text-body-secondary me-1" href="https://github.com/evejaeyong"><i class="bi bi-github"></i> </a>
-                <a class="nav-link p-0 text-body-secondary" href="https://www.instagram.com/evejaeyong_/"><i class="bi bi-instagram"></i></a>
-                </div>
-              </li>
-              <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary">Seoeun Yang</a>
-                <div class="d-flex align-items-center mb-2 mt-2">
-                  <a class="nav-link p-0 text-body-secondary me-1" href="https://github.com/SeoeunY"><i class="bi bi-github"></i> </a>
-                <a class="nav-link p-0 text-body-secondary" href="https://www.instagram.com/seoeun_0722/"><i class="bi bi-instagram"></i></a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </footer>
+
+    </div>
+
+
+    <div id="modal" class="hidden">
+      <div id="modal-container">
+        <h3>POST</h3>
+        <div class="d-flex mt-2">
+          <input type="text" class="form-control me-1" id="postNameInput" placeholder="이름">
+          <input type="text" class="form-control ms-1" id="postAgeInput" placeholder="나이">
+
+        </div>
+        <div class="d-flex mt-2">
+          <select class="form-select me-1" id="MBTI">
+            <option selected>MBTI</option>
+            <option value="ISTJ">ISTJ</option>
+            <option value="ISFJ">ISFJ</option>
+            <option value="INFJ">INFJ</option>
+            <option value="INTJ">INTJ</option>
+            <option value="ISTP">ISTP</option>
+            <option value="ISFP">ISFP</option>
+            <option value="INFP">INFP</option>
+            <option value="INTP">INTP</option>
+            <option value="ESTP">ESTP</option>
+            <option value="ESFP">ESFP</option>
+            <option value="ENFP">ENFP</option>
+            <option value="ENTP">ENTP</option>
+            <option value="ESTJ">ESTJ</option>
+            <option value="ESFJ">ESFJ</option>
+            <option value="ENFJ">ENFJ</option>
+            <option value="ENTJ">ENTJ</option>
+          </select>
+          <select class="form-select ms-1" id="location">
+            <option selected>사는 곳</option>
+            <option value="서울">서울</option>
+            <option value="인천">인천</option>
+            <option value="경기">경기</option>
+            <option value="부산">부산</option>
+            <option value="광주">광주</option>
+            <option value="대구">대구</option>
+            <option value="대전">대전</option>
+            <option value="울산">울산</option>
+            <option value="충북">충북</option>
+            <option value="충남">충남</option>
+            <option value="전북">전북</option>
+            <option value="전남">전남</option>
+            <option value="경북">경북</option>
+            <option value="경남">경남</option>
+            <option value="제주">제주</option>
+          </select>
+        </div>
+
+        <input type="text" class="form-control mt-2" id="postemail" placeholder="이메일"></input>
+        <input type="text" class="form-control mt-2" id="postIntroduceInput" placeholder="한 줄 소개">
+
+        <div class="d-flex mt-2">
+          <p class="flex-grow-1"></p>
+          <button class="btn btn-success mt-2 me-2" id="modalPostButton">Post</button>
+          <button class="btn btn-danger mt-2" id="modalCloseButton">Cancel</button>
+        </div>
       </div>
+    </div>
+
+
+  </div>
+
+
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <p class="text-body-secondary">© 2023 Jaeyong's Love Finder</p>
+      </div>
+
+      <div class="col mb-3">
+
+      </div>
+
+      <div class="col mb-3">
+        <h5>Page</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="main.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="male.html" class="nav-link p-0 text-body-secondary">Male</a></li>
+          <li class="nav-item mb-2"><a href="female.html" class="nav-link p-0 text-body-secondary">Female</a></li>
+          <li class="nav-item mb-2"><a href="mypage.html" class="nav-link p-0 text-body-secondary">My Page</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Developer</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary">Taegwan Kim</a>
+            <div class="d-flex align-items-center mb-2 mt-2">
+              <a class="nav-link p-0 text-body-secondary me-1" href="https://github.com/KimTaegwan03"><i
+                  class="bi bi-github"></i></a>
+              <a class="nav-link p-0 text-body-secondary" href="https://www.instagram.com/tae9wan/"><i
+                  class="bi bi-instagram"></i></a>
+            </div>
+          </li>
+
+          <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary">Jaeyong Kim</a>
+            <div class="d-flex align-items-center mb-2 mt-2">
+              <a class="nav-link p-0 text-body-secondary me-1" href="https://github.com/evejaeyong"><i
+                  class="bi bi-github"></i> </a>
+              <a class="nav-link p-0 text-body-secondary" href="https://www.instagram.com/evejaeyong_/"><i
+                  class="bi bi-instagram"></i></a>
+            </div>
+          </li>
+          <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary">Seoeun Yang</a>
+            <div class="d-flex align-items-center mb-2 mt-2">
+              <a class="nav-link p-0 text-body-secondary me-1" href="https://github.com/SeoeunY"><i
+                  class="bi bi-github"></i> </a>
+              <a class="nav-link p-0 text-body-secondary" href="https://www.instagram.com/seoeun_0722/"><i
+                  class="bi bi-instagram"></i></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
 </body>
 
 <script src="female.js"></script>

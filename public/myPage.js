@@ -71,3 +71,14 @@ function insertFollwoing(post) {
 
     content_container.appendChild(indiv_content);
 }
+
+function logout() {
+    loginState = {
+        ID: "",
+        PW: "",
+        gender: "",
+        email: ""
+    };
+
+    location.href = "index.html";
+}
