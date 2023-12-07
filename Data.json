@@ -27,7 +27,8 @@
             "mbti": "ISTP",
             "home": "울산",
             "gender": "Man",
-            "intro": "GOAT"
+            "intro": "안녕하세여 컴정공 딘스리스트 김태관입니다><",
+            "email": "user1@gmail.com"
         },
         {
             "name": "김재용",
@@ -35,7 +36,8 @@
             "mbti": "ISTJ",
             "home": "충북",
             "gender": "Man",
-            "intro": "차기 독재자"
+            "intro": "안녕하세여 24년도 컴정공 회장 김재용입니다><",
+            "email": "user2@gmail.com"
         },
         {
             "name": "양서은",
@@ -43,7 +45,8 @@
             "mbti": "ENTJ",
             "home": "서울",
             "gender": "Woman",
-            "intro": "울랄라"
+            "intro": "안녕하세여 그냥 컴정공 양서은입니다><",
+            "email": "user3gmail.com"
         }
     ]
 }

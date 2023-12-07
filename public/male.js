@@ -23,6 +23,7 @@ modalPostButton.addEventListener('click', () => {
     const postAgeInput = document.querySelector('#postAgeInput');
     const MBTIinput = document.querySelector('#MBTI');
     const locationInput = document.querySelector("#location");
+    const EmailInput = document.querySelector('#postemail');
     const IntroInput = document.querySelector('#postIntroduceInput');
 
     let postData = {
@@ -31,7 +32,8 @@ modalPostButton.addEventListener('click', () => {
         mbti: MBTIinput.value,
         home: locationInput.value,
         gender: "Man",
-        intro: IntroInput.value
+        intro: IntroInput.value,
+        email: EmailInput.value
     }
 
     insertPost(postData);
