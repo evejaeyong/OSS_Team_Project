@@ -33,6 +33,14 @@ modalPostButton.addEventListener('click', () => {
 
     insertPost(postData);
 
+    fetch("/upload", {
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ postData })
+    })
+
     modal.classList.add('hidden');
 })
 
@@ -86,3 +94,7 @@ function insertPost(post) {
 window.addEventListener('unload', () => {
     updateLocalStorage();
 })
+
+function updateLocalStorage() {
+    localStorage.setItem("state", JSON.stringify(loginState));
+}

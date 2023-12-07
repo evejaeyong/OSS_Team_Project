@@ -4,7 +4,21 @@
             "ID": "user1",
             "PW": "qwe123",
             "gender": "Man",
-            "email": "user1@gmail.com"
+            "email": "user1@gmail.com",
+            "following": [
+                {
+                    "name": "김태관",
+                    "age": 21,
+                    "mbti": "ISTP",
+                    "home": "울산"
+                },
+                {
+                    "name": "김재용",
+                    "age": 71,
+                    "mbti": "ISTJ",
+                    "home": "충북"
+                }
+            ]
         },
         {
             "ID": "user2",
@@ -24,7 +38,7 @@
             "name": "김태관",
             "age": 21,
             "mbti": "ISTP",
-            "home": "ulsan"
+            "home": "울산"
         },
         {
             "name": "김재용",

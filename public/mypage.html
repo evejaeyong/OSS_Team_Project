@@ -21,8 +21,40 @@
     }
   </style>
   <style type="text/css">
-    .navbar{
-     background-color:#ffffff !important;
+    .navbar {
+      background-color: #ffffff !important;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    .content-container {
+      width: 60%;
+      height: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .indiv-content {
+      padding: 15px;
+      margin: 15px;
+      background-color: #F0F8FF;
+      border-radius: 10px;
+    }
+
+    .content-container {
+      padding-top: 200px;
+      padding-bottom: 200px;
+      ;
+    }
+
+    div.UserList {
+      margin-left: 15px;
+      padding-right: 15px;
+      font-size: 24px;
     }
   </style>
   <title>Jaeyong's Love Finder</title>
@@ -33,7 +65,8 @@
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand rebecca-font" href="main.html"><i class="bi bi-arrow-through-heart-fill"></i> Love Finder</a>
+      <a class="navbar-brand rebecca-font" href="main.html"><i class="bi bi-arrow-through-heart-fill"></i> Love
+        Finder</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -45,57 +78,108 @@
           <a class="nav-link" href="female.html">Female</a>
           <a class="nav-link active" aria-current="page" href="mypage.html">My Page</a>
         </div>
-      </nav>
-      여기는내페이지여기는내페이지여기는내페이지
-      <div class="container">
-        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-          <div class="col mb-3">
-            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-            </a>
-            <p class="text-body-secondary">© 2023 Jaeyong's Love Finder</p>
-          </div>
-      
-          <div class="col mb-3">
-      
-          </div>
-      
-          <div class="col mb-3">
-            <h5>Page</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="main.html" class="nav-link p-0 text-body-secondary">Home</a></li>
-              <li class="nav-item mb-2"><a href="male.html" class="nav-link p-0 text-body-secondary">Male</a></li>
-              <li class="nav-item mb-2"><a href="female.html" class="nav-link p-0 text-body-secondary">Female</a></li>
-              <li class="nav-item mb-2"><a href="mypage.html" class="nav-link p-0 text-body-secondary">My Page</a></li>
-            </ul>
-          </div>
-      
-          <div class="col mb-3">
-            <h5>Developer</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary">Taegwan Kim</a>
-                <div class="d-flex align-items-center mb-2 mt-2">
-                  <a class="nav-link p-0 text-body-secondary me-1" href="https://github.com/KimTaegwan03"><i class="bi bi-github"></i></a>
-                <a class="nav-link p-0 text-body-secondary" href="https://www.instagram.com/tae9wan/"><i class="bi bi-instagram"></i></a>
-                </div>
-              </li>
-                
-              <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary">Jaeyong Kim</a>
-                <div class="d-flex align-items-center mb-2 mt-2">
-                  <a class="nav-link p-0 text-body-secondary me-1" href="https://github.com/evejaeyong"><i class="bi bi-github"></i> </a>
-                <a class="nav-link p-0 text-body-secondary" href="https://www.instagram.com/evejaeyong_/"><i class="bi bi-instagram"></i></a>
-                </div>
-              </li>
-              <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary">Seoeun Yang</a>
-                <div class="d-flex align-items-center mb-2 mt-2">
-                  <a class="nav-link p-0 text-body-secondary me-1" href="https://github.com/SeoeunY"><i class="bi bi-github"></i> </a>
-                <a class="nav-link p-0 text-body-secondary" href="https://www.instagram.com/seoeun_0722/"><i class="bi bi-instagram"></i></a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </footer>
+  </nav>
+
+
+  <div class="main-container" style="background-color : #ac82ff;">
+    <!-- <div class="picture-container">
+          <img src="main44.jpg" id="main-img">
+        </div> -->
+
+
+    <div class="content-container">
+      <div>
+        <div class="d-flex ps-2 UserList">
+          <p class="flex-grow-1 rebecca-font" style="margin-top:auto; margin-bottom: auto;">Following List</p>
+        </div>
       </div>
+
+
+      <div class="indiv-content shadow-sm d-flex">
+        <div class="indiv-info flex-grow-1">
+          <p><strong>이름 : 홍길동</strong></p>
+          <p>나이 : 22</p>
+          <p>거주지 : 서울특별시 어쩌구</p>
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <p class="text-body-secondary">© 2023 Jaeyong's Love Finder</p>
+      </div>
+
+      <div class="col mb-3">
+
+      </div>
+
+      <div class="col mb-3">
+        <h5>Page</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="main.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="male.html" class="nav-link p-0 text-body-secondary">Male</a></li>
+          <li class="nav-item mb-2"><a href="female.html" class="nav-link p-0 text-body-secondary">Female</a></li>
+          <li class="nav-item mb-2"><a href="mypage.html" class="nav-link p-0 text-body-secondary">My Page</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Developer</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary">Taegwan Kim</a>
+            <div class="d-flex align-items-center mb-2 mt-2">
+              <a class="nav-link p-0 text-body-secondary me-1" href="https://github.com/KimTaegwan03"><i
+                  class="bi bi-github"></i></a>
+              <a class="nav-link p-0 text-body-secondary" href="https://www.instagram.com/tae9wan/"><i
+                  class="bi bi-instagram"></i></a>
+            </div>
+          </li>
+
+          <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary">Jaeyong Kim</a>
+            <div class="d-flex align-items-center mb-2 mt-2">
+              <a class="nav-link p-0 text-body-secondary me-1" href="https://github.com/evejaeyong"><i
+                  class="bi bi-github"></i> </a>
+              <a class="nav-link p-0 text-body-secondary" href="https://www.instagram.com/evejaeyong_/"><i
+                  class="bi bi-instagram"></i></a>
+            </div>
+          </li>
+          <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary">Seoeun Yang</a>
+            <div class="d-flex align-items-center mb-2 mt-2">
+              <a class="nav-link p-0 text-body-secondary me-1" href="https://github.com/SeoeunY"><i
+                  class="bi bi-github"></i> </a>
+              <a class="nav-link p-0 text-body-secondary" href="https://www.instagram.com/seoeun_0722/"><i
+                  class="bi bi-instagram"></i></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
 </body>
+<script src="myPage.js"></script>
 
 </html>
