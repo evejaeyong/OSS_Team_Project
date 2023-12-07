@@ -23,12 +23,15 @@ modalPostButton.addEventListener('click', () => {
     const postAgeInput = document.querySelector('#postAgeInput');
     const MBTIinput = document.querySelector('#MBTI');
     const locationInput = document.querySelector("#location");
+    const IntroInput=document.querySelector('#postIntroduceInput');
 
     let postData = {
         name: postNameInput.value,
         age: postAgeInput.value,
         mbti: MBTIinput.value,
-        home: locationInput.value
+        home: locationInput.value,
+        gender: "Woman",
+        intro: IntroInput.value
     }
 
     insertPost(postData);
@@ -68,7 +71,7 @@ async function loadPost() {
         .then((postDataList) => {
 
             postDataList.forEach((post) => {
-                if (post.gender == "Woman")
+                if(post.gender=="Woman")
                     insertPost(post);
             })
         })
@@ -113,6 +116,7 @@ function insertPost(post) {
 
     indiv_content.appendChild(indiv_info);
     indiv_content.appendChild(btn_heart);
+
 
     content_container.appendChild(indiv_content);
 }
