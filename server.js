@@ -17,12 +17,23 @@ app.get("/postData", (req, res) => {
     res.json(postDataList);
 })
 
+app.post("/myFollowing", (req, res) => {
+    userDataList.forEach((user) => {
+        if (user.ID === req.body.loginState.ID) {
+            res.json(user.following);
+            return;
+        }
+    })
+    res.json([]);
+})
+
 app.post("/signup", (req, res) => {
     userDataList.push(req.body.userData);
     console.log(userDataList);
     //res.redirect(200, "./main.html");
 });
 
+// Upload new post to postData of server
 app.post("/upload", (req, res) => {
     postDataList.push(req.body.postData);
 })
