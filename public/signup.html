@@ -45,6 +45,7 @@
 
     .signup-container {
       background-color: rgb(211, 211, 211, 0.3);
+      border-radius: 20px;
     }
   </style>
   <style type="text/css">
@@ -73,24 +74,42 @@
     <div class="signup-container align-items-center mb-2 mt-2 p-2 w-25 center-alignment">
       <h1 class="rebecca-font"><strong>SIGN UP</strong></h1>
       <div class="signupbox">
-        <p>ID</p>
-        <input type="text" id="IDinput"><br>
-        <p>PassWord</p>
-        <input type="text" id="PWinput"><br><br>
-        <p>Gender</p>
-        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-          <input type="radio" class="btn-check btn-danger" name="genderradio" id="radioMan" value="Man"
-            autocomplete="off" checked>
-          <label class="btn btn-outline-primary" for="radioMan">Man</label>
-
-          <input type="radio" class="btn-check btn-success" name="genderradio" id="radioWoman" value="Woman"
-            autocomplete="off">
-          <label class="btn btn-outline-danger" for="radioWoman">Woman</label>
+        <br><br>
+        <div class="mb-3 row ps-2 ms-1">
+          <label class="col-sm-1 col-form-label rebecca-font">ID</label>
+          <div class="col-sm-10 ps-5 ms-1">
+            <input type="text" id="IDinput" class="form-control-sm" placeholder="ID"><br>
+          </div>
         </div>
         <br>
-        <p>e-mail</p>
-        <input type="text" id="e-mailinput"><br><br>
-        <button id="btn-login" onclick="sign_up()">Sign Up</button>
+        <div class="mb-3 row ps-2 ms-1">
+          <label class="col-sm-1 col-form-label rebecca-font">PassWord</label>
+          <div class="col-sm-10 ps-5 ms-1">
+            <input type="text" id="PWinput" class="form-control-sm" placeholder="PassWord"><br><br>
+          </div>
+        </div>
+        <div class="mb-3 row ps-2 ms-1">
+          <label class="col-sm-3 col-form-label rebecca-font">Gender</label>
+          <div class="btn-group col-sm-5 ps-4 ms-1" role="group" aria-label="Basic mixed styles example">
+            <input type="radio" class="btn-check btn-danger" name="genderradio" id="radioMan" value="Man"
+              autocomplete="off" checked>
+            <label class="btn btn-outline-primary" for="radioMan"><i class="bi bi-gender-male"></i></label>
+  
+            <input type="radio" class="btn-check btn-success" name="genderradio" id="radioWoman" value="Woman"
+              autocomplete="off">
+            <label class="btn btn-outline-danger" for="radioWoman"><i class="bi bi-gender-female"></i></label>
+          </div>
+        </div>
+        <br>
+        <div class="mb-3 row ps-1 ms-1">
+          <label class="col-sm-3 col-form-label rebecca-font">e-mail</label>
+          <div class="col-sm-5 ps-4 ms-1">
+            <input type="text" id="e-mailinput" class="form-control-sm" placeholder="email"><br>
+          </div>
+        </div>
+        <br><br>
+        
+        <button id="btn-login" class="btn btn-dark" onclick="sign_up()">Sign Up</button>
         <a href="index.html" class="nav-link p-0 text-body-secondary">login</a>
         <p id="signupAlert"> </p>
       </div>
