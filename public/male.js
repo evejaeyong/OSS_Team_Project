@@ -23,12 +23,15 @@ modalPostButton.addEventListener('click', () => {
     const postAgeInput = document.querySelector('#postAgeInput');
     const MBTIinput = document.querySelector('#MBTI');
     const locationInput = document.querySelector("#location");
+    const IntroInput=document.querySelector('#postIntroduceInput');
 
     let postData = {
         name: postNameInput.value,
         age: postAgeInput.value,
         mbti: MBTIinput.value,
-        home: locationInput.value
+        home: locationInput.value,
+        gender: "Man",
+        intro: IntroInput.value
     }
 
     insertPost(postData);
@@ -67,7 +70,8 @@ async function loadPost() {
         .then((postDataList) => {
 
             postDataList.forEach((post) => {
-                insertPost(post);
+                 if(post.gender=="Man")
+                    insertPost(post);
             })
         })
 }
@@ -81,6 +85,7 @@ function insertPost(post) {
     <p><strong>이름 : ${post.name}</strong></p>
     <p>나이 : ${post.age}</p>
     <p>거주지 : ${post.home}</p>
+    <p>한 줄 소개 : ${post.Intro}</p>
   </div>
   <button class="btn-love btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
       class="bi bi-suit-heart-fill bg-heart" viewBox="0 0 16 16">

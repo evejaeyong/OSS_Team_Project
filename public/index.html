@@ -45,6 +45,7 @@
 
     .login-container {
       background-color: rgb(211, 211, 211, 0.3);
+      border-radius: 20px;
     }
   </style>
 
@@ -81,14 +82,23 @@
     <div class="login-container align-items-center mb-2 mt-2 p-2 w-25 center-alignment">
       <h1 class="rebecca-font"><strong>LOGIN</strong></h1>
       <div class="loginbox">
-        <p>ID</p>
-        <input type="text" id="IDinput"><br>
-        <p id="ID-alert"></p>
-        <p>PassWord</p>
-        <input type="text" id="PWinput"><br><br>
-        <p id="PW-alert"></p>
+        <br>
 
-        <button id="btn-login" onclick="login()">Login</button><br>
+        <div class="mb-3 row ps-3 ms-1">
+          <label class="col-sm-1 col-form-label rebecca-font">ID</label>
+          <div class="col-sm-10 ps-5 ms-1">
+            <input type="text" id="IDinput" class="form-control-sm" placeholder="ID"><br>
+          </div>
+        </div>
+        
+        <div class="mb-3 row ps-3 ms-1">
+          <label class="col-sm-1 col-form-label rebecca-font">PassWord</label>
+          <div class="col-sm-10 ps-5 ms-1">
+            <input type="text" id="PWinput" class="form-control-sm" placeholder="PassWord"><br><br>
+          </div>
+        </div>
+
+        <button id="btn-login" class="btn btn-dark" onclick="login()">Login</button><br>
         <a href="signup.html" class="nav-link p-0 text-body-secondary">Sign Up</a>
       </div>
     </div>
