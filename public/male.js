@@ -28,7 +28,8 @@ modalPostButton.addEventListener('click', () => {
         name: postNameInput.value,
         age: postAgeInput.value,
         mbti: MBTIinput.value,
-        home: locationInput.value
+        home: locationInput.value,
+        gender: "Man"
     }
 
     insertPost(postData);
@@ -55,7 +56,8 @@ async function loadPost() {
         .then((postDataList) => {
 
             postDataList.forEach((post) => {
-                insertPost(post);
+                 if(post.gender=="Man")
+                    insertPost(post);
             })
         })
 }

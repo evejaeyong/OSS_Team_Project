@@ -24,13 +24,22 @@
             "name": "김태관",
             "age": 21,
             "mbti": "ISTP",
-            "home": "ulsan"
+            "home": "울산",
+            "gender":"Man"
         },
         {
             "name": "김재용",
             "age": 71,
             "mbti": "ISTJ",
-            "home": "chungbuk"
+            "home": "충북",
+            "gender":"Man"
+        },
+        {
+            "name": "양서은",
+            "age": 21,
+            "mbti": "ENTJ",
+            "home": "서울",
+            "gender": "Woman"
         }
     ]
 }
