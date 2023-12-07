@@ -25,21 +25,24 @@
             "age": 21,
             "mbti": "ISTP",
             "home": "울산",
-            "gender":"Man"
+            "gender":"Man",
+            "Intro": "GOAT"
         },
         {
             "name": "김재용",
             "age": 71,
             "mbti": "ISTJ",
             "home": "충북",
-            "gender":"Man"
+            "gender":"Man",
+            "Intro": "차기 독재자"
         },
         {
             "name": "양서은",
             "age": 21,
             "mbti": "ENTJ",
             "home": "서울",
-            "gender": "Woman"
+            "gender": "Woman",
+            "Intro": "울랄라"
         }
     ]
 }
