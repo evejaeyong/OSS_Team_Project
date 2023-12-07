@@ -10,7 +10,8 @@
                     "name": "김태관",
                     "age": 21,
                     "mbti": "ISTP",
-                    "home": "울산"
+                    "home": "울산",
+                    "Intro": "GOAT"
                 },
                 {
                     "name": "김재용",
@@ -38,13 +39,16 @@
             "name": "김태관",
             "age": 21,
             "mbti": "ISTP",
-            "home": "울산"
+            "home": "울산",
+            "Intro": "GOAT",
+            "gender": "Man"
         },
         {
             "name": "김재용",
             "age": 71,
             "mbti": "ISTJ",
-            "home": "chungbuk"
+            "home": "chungbuk",
+            "gender": "Woman"
         }
     ]
 }

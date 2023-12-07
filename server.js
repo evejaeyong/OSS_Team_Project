@@ -38,6 +38,16 @@ app.post("/upload", (req, res) => {
     postDataList.push(req.body.postData);
 })
 
+app.post("/following", (req, res) => {
+    userDataList.forEach((user) => {
+        if (user.ID === req.body.loginState.ID) {
+            user.following.push(req.body.post);
+            return;
+        }
+    })
+})
+
+
 
 
 app.listen(port, () => {
