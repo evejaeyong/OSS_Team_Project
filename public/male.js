@@ -23,7 +23,7 @@ modalPostButton.addEventListener('click', () => {
     const postAgeInput = document.querySelector('#postAgeInput');
     const MBTIinput = document.querySelector('#MBTI');
     const locationInput = document.querySelector("#location");
-    const IntroInput=document.querySelector('#postIntroduceInput');
+    const IntroInput = document.querySelector('#postIntroduceInput');
 
     let postData = {
         name: postNameInput.value,
@@ -70,7 +70,7 @@ async function loadPost() {
         .then((postDataList) => {
 
             postDataList.forEach((post) => {
-                 if(post.gender=="Man")
+                if (post.gender == "Man")
                     insertPost(post);
             })
         })
@@ -93,7 +93,7 @@ function insertPost(post) {
             <p class="flex-grow-1" style="width:50%;">MBTI : ${post.mbti}</p>
             <p class="flex-grow-1" style="width:50%;">거주지 : ${post.home}</p>
         </div>
-        <p>한 줄 평 : ${post.Intro}</p>`;
+        <p>한 줄 평 : ${post.intro}</p>`;
 
     btn_heart.classList.add("btn-love", "btn");
 

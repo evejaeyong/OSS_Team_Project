@@ -5,32 +5,7 @@
             "PW": "qwe123",
             "gender": "Man",
             "email": "user1@gmail.com",
-            "following": [
-                {
-                    "name": "김태관",
-                    "age": 21,
-                    "mbti": "ISTP",
-                    "home": "울산",
-                    "gender":"Man",
-                    "Intro": "GOAT"
-                },
-                {
-                   "name": "김재용",
-                   "age": 71,
-                   "mbti": "ISTJ",
-                   "home": "충북",
-                   "gender":"Man",
-                   "Intro": "차기 독재자"
-                },
-                {
-                    "name": "양서은",
-                    "age": 21,
-                    "mbti": "ENTJ",
-                    "home": "서울",
-                    "gender": "Woman",
-                    "Intro": "울랄라"
-                }
-            ]
+            "following": []
         },
         {
             "ID": "user2",
@@ -51,16 +26,16 @@
             "age": 21,
             "mbti": "ISTP",
             "home": "울산",
-            "gender":"Man",
-            "Intro": "GOAT"
+            "gender": "Man",
+            "intro": "GOAT"
         },
         {
             "name": "김재용",
             "age": 71,
             "mbti": "ISTJ",
             "home": "충북",
-            "gender":"Man",
-            "Intro": "차기 독재자"
+            "gender": "Man",
+            "intro": "차기 독재자"
         },
         {
             "name": "양서은",
@@ -68,7 +43,7 @@
             "mbti": "ENTJ",
             "home": "서울",
             "gender": "Woman",
-            "Intro": "울랄라"
+            "intro": "울랄라"
         }
     ]
 }
